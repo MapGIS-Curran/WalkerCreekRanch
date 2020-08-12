@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <title>Walker Creek Ranch App</title>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.13.0/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/dark-red/main.css" />
+  <script src="https://js.arcgis.com/4.16/"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body class="claro">
+  <div id="appLayout" class="demoLayout" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design: 'headline'">
+    <div class="centerPanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+      <div id="viewDiv"></div>
+    </div>
+    <div class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'top'">
+
+      <div class="header">
+        <a href="https://www.walkercreekranch.org/" target="_blank"><img src="https://raw.githubusercontent.com/MapGIS-Curran/WalkerCreekRanch/master/WCR_Logo_Final_RGB_transparent%20%20640px.png" alt="Walker Creek Ranch"></a>
+
+        <span style="font-family:wfont_f401d1_57206b4d822a4afd9ebcb695a758c3c1,wf_57206b4d822a4afd9ebcb695a,orig_endurest;">WALKER CREEK RANCH</span>
+      </div>
+    </div>
+
+    <div id="leftCol" class="edgePanel" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left', splitter: true">
+      <div id="paneDiv">
+        <span style="font-size:24px; font-family:wfont_f401d1_6af19982e3bd4f489b49ae0feb4faca9,wf_6af19982e3bd4f489b49ae0fe,orig_endurest; color: #4C3916;">Marin County Outdoor School &amp; Retreat Center</span>
+        <p>Since 1990, Walker Creek Ranch has been a place for people to connect with each other, their communities, and nature. Each year, we serve 5,000 students in our overnight outdoor education programs. We host an additional 5,000 guests each year for private retreats, family reunions, weddings, and more. We pride ourselves as a community that welcomes all people to experience the beauty of Wild West Marin.</p>
+        <p></p>
+        <span style="font-size:24px; font-family:wfont_f401d1_6af19982e3bd4f489b49ae0feb4faca9,wf_6af19982e3bd4f489b49ae0fe,orig_endurest; color: #4C3916;">Point of Interest Locator</span>
+        <br />Select a Point of Interest from the dropdown menu to locate the feature on the interactive Walker Creek Ranch map. A popup will provide additional details.<br />
+        <br /> Point of Interest: <select id="Selection">
+          <option value="None">None</option>
+          <option value="Badger Otter">Badger/Otter</option>
+          <option value="Barn">Barn</option>
+          <option value="Bath House">Bath House</option>
+          <option value="Bobcat Mountain Lion">Bobcat/Mountain Lion</option>
+          <option value="Buckeye Lodge">Buckeye Lodge</option>
+          <option value="Coyote Fox">Coyote Fox</option>
+          <option value="Cypress Lodge">Cypress Lodge</option>
+          <option value="Dining Hall">Dining Hall</option>
+          <option value="Eagle Hawk Owl">Eagle Hawk Owl</option>
+          <option value="Eucalyptus Lodge">Eucalyptus Lodge</option>
+          <option value="Frog Newt">Frog Newt</option>
+          <option value="Live Oak-Private">Live Oak-Private</option>
+          <option value="Maintenance 1">Maintenance 1</option>
+          <option value="Maintenance 2">Maintenance 2</option>
+          <option value="Maintenance 3">Maintenance 3</option>
+          <option value="Maple Room">Maple Room</option>
+          <option value="Muir Room">Muir Room</option>
+          <option value="Naturalist Lodge-Private">Naturalist Lodge-Private</option>
+          <option value="Outdoor Education Office">Outdoor Education Office</option>
+          <option value="Pine Lodge">Pine Lodge</option>
+          <option value="Private 1">Private 1</option>
+          <option value="Private 3">Private 3</option>
+          <option value="Ranch Office">Ranch Office</option>
+          <option value="Salmon Trout">Salmon Trout</option>
+          <option value="Sequoia Lodge">Sequoia Lodge</option>
+          <option value="Teacher's Lodge">Teacher's Lodge</option>
+          <option value="WCR 1">WCR 1</option>
+          <option value="WCR 2">WCR 2</option>
+          <option value="WCR 3">WCR 3</option>
+          <option value="WCR 4">WCR 4</option>
+          <option value="WCR 5">WCR 5</option>
+          <option value="Willow Lodge">Willow Lodge</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
