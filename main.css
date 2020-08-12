@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background: #f6e2bb;
+}
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#appLayout {
+  height: 100%;
+}
+#leftCol {
+  width: 20%;
+  font-family: futura-lt-w01-book, sans-serif;
+}
+
+.claro .demoLayout .edgePanel {
+  background-color: #96b0b6;
+  justify-content: center;
+}
+
+a {
+  color: #7b4123;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #4d9221;
+}
+
+img {
+  display: flex;
+  max-width: 125px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  font-size: 100px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+  color: #4c3916;
+}
+
+#paneDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  text-align: center;
+}
